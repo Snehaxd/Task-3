@@ -1,0 +1,132 @@
+:root {
+    --primary: #00bfff;
+    --bg: #f0faff;
+    --text: #0a0a0a;
+    --card-bg: #ffffffcc;
+    --accent: #007acc;
+}
+
+body.dark {
+    --primary: #1e90ff;
+    --bg: #1e1e2f;
+    --text: #ffffff;
+    --card-bg: #2c2c3e;
+    --accent: #3399ff;
+    background: linear-gradient(135deg, #1e1e2f, #2c2c3e);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #e0f7ff, #a7dcf0);
+    color: var(--text);
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: var(--accent);
+}
+
+.section {
+    max-width: 900px;
+    margin: 30px auto;
+    background: var(--card-bg);
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+}
+
+.section:hover {
+    transform: translateY(-5px);
+}
+
+.carousel img {
+    width: 100%;
+    border-radius: 15px;
+    max-height: 350px;
+    object-fit: cover;
+    transition: transform 0.5s;
+}
+
+.btn-group {
+    text-align: center;
+    margin-top: 15px;
+}
+
+button {
+    margin: 10px;
+    padding: 12px 24px;
+    font-size: 1rem;
+    background: var(--primary);
+    border: none;
+    border-radius: 25px;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+button:hover {
+    background: var(--accent);
+}
+
+#answers button {
+    display: block;
+    width: 100%;
+    margin: 8px 0;
+}
+
+#answers button.correct {
+    background-color: #28a745;
+}
+
+#answers button.wrong {
+    background-color: #dc3545;
+}
+
+.weather-card {
+    text-align: center;
+}
+
+#joke {
+    font-size: 1.3rem;
+    margin-top: 20px;
+    font-style: italic;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+#joke:hover {
+    transform: scale(1.02);
+}
+
+#toggle-mode {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: var(--primary);
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    z-index: 999;
+}
+
+@media (max-width: 768px) {
+    .weather-card {
+        text-align: center;
+    }
+}

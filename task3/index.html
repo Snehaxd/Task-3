@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smart Web Dashboard</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <button id="toggle-mode">🌙 Dark Mode</button>
+  <h1>🌐 Smart Web Dashboard</h1>
+
+  <div class="section carousel">
+    <h2>🖼 Image Carousel</h2>
+    <img id="carousel-img" src="https://images.unsplash.com/photo-1744273556970-d5cff25b2b4a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxMTB8fHxlbnwwfHx8fHw%3D" alt="carousel" />
+    <div class="btn-group">
+      <button onclick="prevImage()">⏮ Previous</button>
+      <button onclick="nextImage()">⏭ Next</button>
+    </div>
+  </div>
+
+  <div class="section" id="quiz-container">
+    <h2>🧠 JS Quiz Challenge</h2>
+    <h3 id="question">Loading question...</h3>
+    <div id="answers"></div>
+    <div class="btn-group">
+      <button onclick="nextQuestion()">Next ➡</button>
+    </div>
+  </div>
+
+  <div class="section" id="joke-container">
+    <h2>🤣 Random Joke Generator</h2>
+    <p id="joke">Loading joke...</p>
+    <div class="btn-group">
+      <button onclick="getJoke()">✨ New Joke</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
